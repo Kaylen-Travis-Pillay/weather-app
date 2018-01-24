@@ -1,0 +1,26 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Web application that  displays the weather forcast",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaylen-Travis-Pillay/weather-app.git"
+  },
+  "keywords": [
+    "weather",
+    "yahoo",
+    "nodejs",
+    "npm",
+    "express"
+  ],
+  "author": "Kaylen Travis Pillay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kaylen-Travis-Pillay/weather-app/issues"
+  },
+  "homepage": "https://github.com/Kaylen-Travis-Pillay/weather-app#readme"
+}
