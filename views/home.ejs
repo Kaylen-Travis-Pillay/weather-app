@@ -1,31 +1,24 @@
 <% include partials/header %>
-    <nav class="navbar navbar-transparent">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsed"
-                    aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">
-                    <i class="fa fa-cloud fa-1x" aria-hidden="true"></i>
-                    Weatherly
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="collapsed">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="/current-weather">Get Weather</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="https://github.com/Kaylen-Travis-Pillay/weather-app" class="btn btn-info" role="button">View on Github</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="container text-center jumbo-con">
+        <div class="jumbotron change">
+            <h1>
+                Get the latest weather for Durban, South Africa
+            </h1>
+            <hr>
+            <p>
+                View the weather here,
+            </p>
+            <p>
+                Or get it emailed to you
+            </p>
+            <form class="form-inline" action="/email-weather" method="POST">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="emailAddr" id="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" placeholder="your@email.com"
+                        required>
+                </div>
+                <button type="submit" class="btn btn-default">Get weather emailed</button>
+            </form>
         </div>
-    </nav>
+    </div>
 <% include partials/footer %>
