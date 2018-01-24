@@ -1,0 +1,32 @@
+.navbar-toggle{
+    background-color: rgb(193, 226, 253);
+}
+
+.navbar-toggle > .icon-bar{
+    background-color: #2C6FAE;
+}
+
+.navbar-nav > li > a{
+    text-align: center;
+}
+
+.landing-body{
+    background: url(https://source.unsplash.com/BS-Uxe8wU5Y) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar{
+    margin-top: 2%;
+}
+
+.navbar-brand{
+    color: wheat;
+}
+
+.navbar-nav > li > a{
+    color: wheat;
+}
+
+.navbar-right > li > a{
+    color: black;
+}

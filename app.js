@@ -6,7 +6,7 @@ app.set("view engine", "ejs");
 
 // Routes
 app.get("/", function(req, res){
-    res.send("Connected");
+    res.render("home");
 });
 
 // Listen
