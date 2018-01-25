@@ -5,6 +5,8 @@ var credentials = require("./credentials.json");
 var request = require("request");
 var nodemailer = require('nodemailer');
 var api_data;
+const path = require('path')
+const PORT = process.env.PORT || 5000
 
 var transporter = nodemailer.createTransport({
     service: credentials.service,
@@ -14,6 +16,9 @@ var transporter = nodemailer.createTransport({
     }
 });
 
+app.use(express.static(path.join(__dirname, 'public')));
+app.set('views', path.join(__dirname, 'views'));
+app
 app.use(body_parser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
@@ -82,6 +87,4 @@ app.get("*", function(req, res){
 });
 
 // Listen
-app.listen(3000, function(){
-    console.log("Server started @ localhost:3000");
-});
+app.listen(PORT, () => console.log(`Listening on ${PORT}`));
